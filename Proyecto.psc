@@ -20,8 +20,8 @@ Funcion Ejercicio1()
 	Definir resultado2 Como Entero
 	Definir resultado3 Como Real
 	//	Ejercicio 1.
-	//	øSiguiendo la prioridad de operadores, convierta a expresiÛn matem·tica,
-	//	resuelva e indique en cu·l tipo de variable almacenar· el resultado de las
+	//	¬øSiguiendo la prioridad de operadores, convierta a expresi√≥n matem√°tica,
+	//	resuelva e indique en cu√°l tipo de variable almacenar√° el resultado de las
 	Escribir "1. (5 + 3 * 2) + 9 > 3 * 5 * 14 % 3 "
 	Escribir "2. 2 *(4 - 10 + 8)/2* 36 *(1/2)"
 	Escribir "3. 260 / 12 + 54 % 3 - 85 % 7 "
@@ -84,7 +84,7 @@ Funcion Ejercicio2()
 	//					si op = "modulo" Entonces
 	//						resultado <- num1%num2
 	//						Escribir "El modulo es de : ", resultado
-	Escribir "Dados dos (2) n˙meros calcule la suma, resta, multiplicaciÛn, divisiÛn y mÛdulo."
+	Escribir "Dados dos (2) n√∫meros calcule la suma, resta, multiplicaci√≥n, divisi√≥n y m√≥dulo."
 	Definir op Como Caracter
 	Definir num1,num2 Como Entero
 	Definir resultado como real
@@ -123,17 +123,17 @@ FinFuncion
 
 Funcion Ejercicio3()
 	Limpiar Pantalla
-	//	Ejercicio 3. Dados tres (3) n˙meros, Hacer una aplicaciÛn que calcule la resolvente
+	//	Ejercicio 3. Dados tres (3) n√∫meros, Hacer una aplicaci√≥n que calcule la resolvente
 	Definir num1,num2,num3,delta,x,x1,x2 Como Real
-	Escribir "Dados tres (3) n˙meros, Hacer una aplicaciÛn que calcule la resolvente"
+	Escribir "Dados tres (3) n√∫meros, Hacer una aplicaci√≥n que calcule la resolvente"
 	Escribir "Ingrese 3 numeros:"
 	Leer num1,num2,num3
 	Limpiar Pantalla
-	//delta se refiere al discriminante, es una expresiÛn matem·tica que se utiliza para determinar el tipo y n˙mero 
-	//de soluciones de una ecuaciÛn cuadr·tica.
+	//delta se refiere al discriminante, es una expresi√≥n matem√°tica que se utiliza para determinar el tipo y n√∫mero 
+	//de soluciones de una ecuaci√≥n cuadr√°tica.
 	delta <- num2^2 - 4 * num1 * num3
 	Si delta < 0 entonces
-		Escribir "La ecuaciÛn no tiene soluciones reales"
+		Escribir "La ecuaci√≥n no tiene soluciones reales"
 	Sino 
 		si delta = 0 entonces
 			//	Un ejemplo para cuando tiene una solucion :
@@ -143,7 +143,7 @@ Funcion Ejercicio3()
 			//	daria como resultado :
 			//	x = 1
 			x <- -num2 / (2 * num1)
-			Escribir "La ecuaciÛn tiene una soluciÛn real:"
+			Escribir "La ecuaci√≥n tiene una soluci√≥n real:"
 			Escribir "x = ", x
 		Sino
 			//	Un ejemplo para cuando tienes mas de una solucion :
@@ -155,7 +155,7 @@ Funcion Ejercicio3()
 			//	x2 = 2
 			x1 <- (-num2 + Raiz(delta)) / (2 * num1)
 			x2 <- (-num2 - Raiz(delta)) / (2 * num1)
-			Escribir "La ecuaciÛn tiene dos soluciones reales:"
+			Escribir "La ecuaci√≥n tiene dos soluciones reales:"
 			Escribir "x1 = ", x1
 			Escribir "x2 = ", x2
 		FinSi
@@ -165,7 +165,7 @@ FinFuncion
 
 Funcion Ejercicio4()
 	Limpiar Pantalla
-	Escribir "Dados dos (2) lados de un tri·ngulo en cm, calcular la hipotenusa del mismo."
+	Escribir "Dados dos (2) lados de un tri√°ngulo en cm, calcular la hipotenusa del mismo."
 	Escribir "Ingrese los lados del triangulo"
 	Leer lado1,lado2
 	//Formula para calcular la hipotenusa del trianguloS
@@ -177,39 +177,39 @@ FinFuncion
 
 Funcion Ejercicio5()
 	Limpiar Pantalla
-	//Dado un (1) n˙mero, imprimir 0 si es par y 1 si es impar.
+	//Dado un (1) n√∫mero, imprimir 0 si es par y 1 si es impar.
 	//definir num, resto como entero;
 	//escribir "digite un numero";
 	//leer num;
 	//resto <- num mod 2;
 	//Si resto = 0 Entonces
-	//	Escribir "el numero es par: 0"  // El n˙mero es par
+	//	Escribir "el numero es par: 0"  // El n√∫mero es par
 	//Sino
-	//	Escribir "el numero es impar: 1"  // El n˙mero es impar
+	//	Escribir "el numero es impar: 1"  // El n√∫mero es impar
 	//FinSi
 	Definir num Como Entero
-	Escribir "Dado un (1) n˙mero, imprimir 0 si es par y 1 si es impar."
+	Escribir "Dado un (1) n√∫mero, imprimir 0 si es par y 1 si es impar."
 	escribir "digite un numero";
 	leer num;
 	resto <- num mod 2;
 	Si resto = 0 Entonces
-        Escribir "el numero es par: 0"  // El n˙mero es par
+        Escribir "el numero es par: 0"  // El n√∫mero es par
     Sino
-        Escribir "el numero es impar: 1"  // El n˙mero es impar
+        Escribir "el numero es impar: 1"  // El n√∫mero es impar
     FinSi
 	
 FinFuncion
 
 Funcion Ejercicio6()
 	Limpiar Pantalla
-	//Dado un (1) n˙mero binario de cuatro (4) dÌgitos imprimir su valor
-	Escribir "Dado un (1) n˙mero binario de cuatro (4) dÌgitos imprimir su valor"
-	// Entrada: n˙mero binario de 4 dÌgitos
-    // Salida: n˙mero decimal
+	//Dado un (1) n√∫mero binario de cuatro (4) d√≠gitos imprimir su valor
+	Escribir "Dado un (1) n√∫mero binario de cuatro (4) d√≠gitos imprimir su valor"
+	// Entrada: n√∫mero binario de 4 d√≠gitos
+    // Salida: n√∫mero decimal
     Definir numeroBinario Como Entero
     Definir decimal Como Real
     decimal <- 0
-    Escribir "Ingrese el n˙mero binario de 4 dÌgitos: "
+    Escribir "Ingrese el n√∫mero binario de 4 d√≠gitos: "
     Leer numeroBinario
 	Limpiar Pantalla
     Si numeroBinario >= 1000 Entonces
@@ -231,7 +231,7 @@ Funcion Ejercicio6()
         decimal <- decimal + 1
     Fin Si
 	
-    Escribir "El n˙mero decimal equivalente es: ", decimal
+    Escribir "El n√∫mero decimal equivalente es: ", decimal
 	
 	
 FinFuncion
@@ -241,7 +241,7 @@ Funcion Ejercicio7()
 	Limpiar Pantalla
 	Definir unidades,unidades_Mil,decenas,centenas Como Real
 	Definir num Como Entero
-	Escribir"Ejercicio 7.Dado un (1) n˙mero de cuatro (4) dÌgitos imprimirlo por separado en unidades,decenas, centenas y unidades de mil." 
+	Escribir"Ejercicio 7.Dado un (1) n√∫mero de cuatro (4) d√≠gitos imprimirlo por separado en unidades,decenas, centenas y unidades de mil." 
 	Escribir "Ingrese un numero de 4 digitos"
 	Leer num;
 	Limpiar Pantalla
@@ -267,24 +267,24 @@ FinFuncion
 
 Funcion Ejercicio8()
 	Limpiar Pantalla
-	//	Dado un car·cter indicar si es un digito o una consonante o un car·cter especial.
-    // Entrada: un car·cter
-    // Salida: tipo de car·cter (dÌgito, consonante o car·cter especial)
+	//	Dado un car√°cter indicar si es un digito o una consonante o un car√°cter especial.
+    // Entrada: un car√°cter
+    // Salida: tipo de car√°cter (d√≠gito, consonante o car√°cter especial)
 	
     Definir caract Como Caracter
-	Escribir "Dado un car·cter indicar si es un digito o una consonante o un car·cter especial."
-    Escribir "Ingrese un car·cter: "
+	Escribir "Dado un car√°cter indicar si es un digito o una consonante o un car√°cter especial."
+    Escribir "Ingrese un car√°cter: "
 	caract <- "";
     Leer caract
 	
     Si caract >= '0' y caract <= '9' Entonces
-        Escribir "Es un dÌgito"
+        Escribir "Es un d√≠gito"
     Sino 
 		Si (caract >= 'A' y caract <= 'Z') o (caract >= 'a' y caract <= 'z') Entonces
 			
 			Escribir "Es una consonante"
 		Sino
-			Escribir "Es un car·cter especial"
+			Escribir "Es un car√°cter especial"
 		Fin Si
 		
 	finsi
@@ -293,7 +293,7 @@ FinFuncion
 
 Funcion Ejercicio9()
 	Limpiar Pantalla
-	//Dado dos caracteres indicar si el primer car·cter es igual, mayor o menor que el segundo
+	//Dado dos caracteres indicar si el primer car√°cter es igual, mayor o menor que el segundo
 	//entrada
 	//definir cart1, cart2 como caracter;
 	//escribir "escribir dos caracter";
@@ -308,8 +308,8 @@ Funcion Ejercicio9()
 	//		escribir "ambos caracteres son iguales:";
 	//	FinSi
 	//FinSi
-	//	Dado dos caracteres indicar si el primer car·cter es igual, mayor o menor que el segundo
-	Escribir "Dado dos caracteres indicar si el primer car·cter es igual, mayor o menor que el segundo"
+	//	Dado dos caracteres indicar si el primer car√°cter es igual, mayor o menor que el segundo
+	Escribir "Dado dos caracteres indicar si el primer car√°cter es igual, mayor o menor que el segundo"
 	definir cart1, cart2 como caracter;
 	escribir "escribir dos caracter";
 	leer cart1, cart2;
@@ -327,7 +327,7 @@ FinFuncion
 Funcion Ejercicio10()
 	Limpiar Pantalla
 	Definir frase Como Caracter
-	//	Dada una frase cualquiera presentarla en may˙scula y minuscula
+	//	Dada una frase cualquiera presentarla en may√∫scula y minuscula
 	Escribir "Ingrese como desea presentarla (Mayus-Minus)"
 	presentar <- ""
 	Leer presentar
@@ -352,27 +352,27 @@ FinFuncion
 //submenu  condicionales
 Funcion EjercicioC1()
 	Limpiar Pantalla
-	//	Si (aÒo % 400 = 0) o ((aÒo % 4 = 0) y (aÒo % 100 <> 0)) Entonces
-	//        Escribir "El aÒo es bisiesto."
+	//	Si (a√±o % 400 = 0) o ((a√±o % 4 = 0) y (a√±o % 100 <> 0)) Entonces
+	//        Escribir "El a√±o es bisiesto."
 	//    Sino
-	//        Escribir "El aÒo no es bisiesto."
+	//        Escribir "El a√±o no es bisiesto."
 	//	FinSi
-	Escribir "Todos los aÒos que se dividen exactamente entre 400, o que son divisibles exactamente entre 4 y no son divisibles exactamente entre 100 son aÒos bisiestos.Usando estas" 
-	Escribir" premisas crea un algoritmo que lea una fecha como un en tres variables: aaaa,mes, dia, y luego indique si el aÒo de la fecha es un aÒo bisiesto o no"
+	Escribir "Todos los a√±os que se dividen exactamente entre 400, o que son divisibles exactamente entre 4 y no son divisibles exactamente entre 100 son a√±os bisiestos.Usando estas" 
+	Escribir" premisas crea un algoritmo que lea una fecha como un en tres variables: aaaa,mes, dia, y luego indique si el a√±o de la fecha es un a√±o bisiesto o no"
 	
-    Definir aÒo, mes, dÌa Como Entero
+    Definir a√±o, mes, d√≠a Como Entero
 	
-    Escribir "Ingrese el aÒo: "
-    Leer aÒo
+    Escribir "Ingrese el a√±o: "
+    Leer a√±o
     Escribir "Ingrese el mes: "
     Leer mes
-    Escribir "Ingrese el dÌa: "
-    Leer dÌa
+    Escribir "Ingrese el d√≠a: "
+    Leer d√≠a
 	Limpiar Pantalla
-    Si (aÒo % 400 = 0) o ((aÒo % 4 = 0) y (aÒo % 100 <> 0)) Entonces
-        Escribir "El aÒo es bisiesto."
+    Si (a√±o % 400 = 0) o ((a√±o % 4 = 0) y (a√±o % 100 <> 0)) Entonces
+        Escribir "El a√±o es bisiesto."
     Sino
-        Escribir "El aÒo no es bisiesto."
+        Escribir "El a√±o no es bisiesto."
 	FinSi
 FinFuncion
 
@@ -380,7 +380,7 @@ funcion EjercicioC2()
 	Limpiar Pantalla
 	Definir num,inversa Como Caracter
 	Definir a,b,i Como Entero
-	Escribir "Dado un n˙mero entero cuya cantidad de dÌgitos es igual a 5, determine si escapic˙a"
+	Escribir "Dado un n√∫mero entero cuya cantidad de d√≠gitos es igual a 5, determine si escapic√∫a"
 	Escribir "Ingrese el numero de 5 digitos"
 	leer num
 	inversa="";
@@ -403,7 +403,7 @@ FinFuncion
 Funcion EjercicioC3()
 	Limpiar Pantalla
 	Definir dias,minutos,horas,sg Como real
-	Escribir "Ejercicio 3. Para un valor entero positivo que representa una cantidad en segundos, indicar su equivalente en minutos, horas y dÌas."
+	Escribir "Ejercicio 3. Para un valor entero positivo que representa una cantidad en segundos, indicar su equivalente en minutos, horas y d√≠as."
 	Escribir "Ingrese un valor entero positivo : "
 	Leer sg;
 	
@@ -427,27 +427,27 @@ Funcion EjercicioC3()
 FinFuncion
 Funcion EjercicioC4()
 	Limpiar Pantalla
-	//	Dados tres n˙meros enteros positivos A, B y C, øDetermine si son iguales? øcu·l de ellos es
-	//		elmayor? y øcu·l es el segundo mayor?
-	Escribir "Dados tres n˙meros enteros positivos A, B y C, øDetermine si son iguales? øcu·l de ellos es elmayor? y øcu·l es el segundo mayor?"
-	// Entrada: tres n˙meros enteros positivos A, B y C
-    // Salida: si los n˙meros son iguales, el mayor y el segundo mayor
+	//	Dados tres n√∫meros enteros positivos A, B y C, ¬øDetermine si son iguales? ¬øcu√°l de ellos es
+	//		elmayor? y ¬øcu√°l es el segundo mayor?
+	Escribir "Dados tres n√∫meros enteros positivos A, B y C, ¬øDetermine si son iguales? ¬øcu√°l de ellos es elmayor? y ¬øcu√°l es el segundo mayor?"
+	// Entrada: tres n√∫meros enteros positivos A, B y C
+    // Salida: si los n√∫meros son iguales, el mayor y el segundo mayor
 	
     Definir A, B, C Como Entero
     Definir Nmayor, segundoMayor Como Entero
 	
-    Escribir "Ingrese el n˙mero A: "
+    Escribir "Ingrese el n√∫mero A: "
     Leer A
 	
-    Escribir "Ingrese el n˙mero B: "
+    Escribir "Ingrese el n√∫mero B: "
     Leer B
 	
-    Escribir "Ingrese el n˙mero C: "
+    Escribir "Ingrese el n√∫mero C: "
     Leer C
 	Limpiar Pantalla
 	
     Si A = B y B = C Entonces
-        Escribir "Los n˙meros son iguales."
+        Escribir "Los n√∫meros son iguales."
     Sino
         Si A >= B y A >= C Entonces
 			//Se va guardando el mayor de todos
@@ -479,18 +479,18 @@ Funcion EjercicioC4()
 			Fin Si
 		Fin Si
 	FinSi
-	Escribir "El n˙mero mayor es: ", Nmayor
+	Escribir "El n√∫mero mayor es: ", Nmayor
 	Escribir "El segundo mayor es: ", segundoMayor
 FinFuncion
 
 Funcion EjercicioC5()
 	Limpiar Pantalla
-	Escribir "En un estacionamiento el monto a pagar se calcula multiplicando el n˙mero de horas que"
-	Escribir"permaneciÛ el automÛvil dentro del estacionamiento por $1.5 la hora.La fracion en"
+	Escribir "En un estacionamiento el monto a pagar se calcula multiplicando el n√∫mero de horas que"
+	Escribir"permaneci√≥ el autom√≥vil dentro del estacionamiento por $1.5 la hora.La fracion en"
 	Escribir"minutos de (1- 29 minutos) se cobra $0.5. Pasado de 30 minutos se cobra el valor de la hora"
 	Escribir"Ahora se desea que usted elabore un algoritmo que a partir de la hora de entraday la "
-	Escribir"hora de salida de un vehÌculo (las mismas corresponden a un mismo dÌa) calcule el monto a pagar por el dueÒo del vehÌculo."
-	Escribir"La entrada vendr· dada por dos enteros positivos el primero representa las horas y el segundo los minutos"
+	Escribir"hora de salida de un veh√≠culo (las mismas corresponden a un mismo d√≠a) calcule el monto a pagar por el due√±o del veh√≠culo."
+	Escribir"La entrada vendr√° dada por dos enteros positivos el primero representa las horas y el segundo los minutos"
 	Definir H_Entrada, M_Entrada, Hora_Salida, M_Salida, dMin, mPagar, hC Como real
 	Definir tMinEntra, tMinSal  Como Real
 	tMinEntra =0; tMinSal =0
@@ -527,25 +527,25 @@ FinFuncion
 
 Funcion EjercicioC6
 	Limpiar Pantalla
-	Escribir"El IMC resulta de la divisiÛn de la masa del individuo (en kilogramos) entre el cuadrado de"
-	Escribir"la estatura (en metros). El Ìndice de masa corporal es un indicadordel peso de una"
-	Escribir"persona en relaciÛn con su altura."
-	Escribir"ClasificaciÛn del IMC de acuerdo con la OMS de la ONU:"
+	Escribir"El IMC resulta de la divisi√≥n de la masa del individuo (en kilogramos) entre el cuadrado de"
+	Escribir"la estatura (en metros). El √≠ndice de masa corporal es un indicadordel peso de una"
+	Escribir"persona en relaci√≥n con su altura."
+	Escribir"Clasificaci√≥n del IMC de acuerdo con la OMS de la ONU:"
 	Escribir"a. Menor a 16: Criterio de ingreso."
 	Escribir"b. 16 a 16.9: infra peso."
 	Escribir"c.17 a 18.4: bajo peso."
 	Escribir"d. 18.5 a 24.9: peso normal."
 	Escribir"e. 25 a 29.9: sobrepeso."
-	Escribir"f. 30 a 34.9: obesidad pre-mÛrbida."
-	Escribir"g. 40 a 45: obesidad mÛrbida."
-	Escribir"h. Mayor a 45: obesidad hÌper-mÛrbida"
+	Escribir"f. 30 a 34.9: obesidad pre-m√≥rbida."
+	Escribir"g. 40 a 45: obesidad m√≥rbida."
+	Escribir"h. Mayor a 45: obesidad h√≠per-m√≥rbida"
 	definir pesolb,estaturacm Como Entero
 	Definir categoria Como Caracter
 	Definir imc,pesokg,estaturame Como Real
 	
 	Escribir "Ingrese el peso en libras:"
 	leer pesolb
-	Escribir "Ingrese la estatura en centÌmetros:"
+	Escribir "Ingrese la estatura en cent√≠metros:"
 	leer estaturacm
 	pesokg <- pesolb * 0.453592
 	estaturame <- estaturacm / 100
@@ -569,13 +569,13 @@ Funcion EjercicioC6
 						categoria="Sobrepeso"
 					SiNo
 						si imc >= 30 y imc <= 34.9 Entonces
-							categoria="Obesidad pre-mÛrbida"
+							categoria="Obesidad pre-m√≥rbida"
 						SiNo
 							si imc >= 35 y imc <= 45 Entonces
-								categoria="Obesidad mÛrbida"
+								categoria="Obesidad m√≥rbida"
 							SiNo
 								
-								categoria="Obesidad hÌper-mÛrbida"
+								categoria="Obesidad h√≠per-m√≥rbida"
 							FinSi
 						FinSi
 					finsi
@@ -586,15 +586,15 @@ Funcion EjercicioC6
 	//Se presenta al final el valor del imc sacado, el peso en kg y la categoria que pertenece
 	Escribir "Peso en kilogramos: ", pesokg
 	Escribir "Valor de IMC: ", imc
-	Escribir "CategorÌa: ", categoria
+	Escribir "Categor√≠a: ", categoria
 
 FinFuncion
 
 Funcion EjercicioC7()
 	Limpiar Pantalla
-	Escribir "Ejercicio 7. Escriba un algoritmo que reciba una fecha (dÌa y mes) correspondiente al aÒo 2014 e imprima por pantalla el n˙mero de dÌas que han pasado desde el 1 deEnero de 2014 hasta la fecha dada."
+	Escribir "Ejercicio 7. Escriba un algoritmo que reciba una fecha (d√≠a y mes) correspondiente al a√±o 2014 e imprima por pantalla el n√∫mero de d√≠as que han pasado desde el 1 deEnero de 2014 hasta la fecha dada."
 	Definir dia, mes, dPasados Como Entero
-	Escribir "Ingrese el dÌa:"
+	Escribir "Ingrese el d√≠a:"
 	Leer dia
 	Escribir "Ingrese el mes:"
 	Leer mes
@@ -636,7 +636,7 @@ Funcion EjercicioC7()
 	
 	dPasados = dPasados + dia - 1
 	
-	Escribir "El n˙mero de dÌas pasados desde el 1 de enero de 2014 es: ", dPasados
+	Escribir "El n√∫mero de d√≠as pasados desde el 1 de enero de 2014 es: ", dPasados
 FinFuncion
 
 
@@ -644,7 +644,7 @@ FinFuncion
 Funcion EjercicioC8()
 	Definir num Como Caracter
 	Limpiar Pantalla
-	Escribir "Solicitar un n˙mero entre el 1 y el 12 e imprimir el mes correspondiente a dicho n˙mero"
+	Escribir "Solicitar un n√∫mero entre el 1 y el 12 e imprimir el mes correspondiente a dicho n√∫mero"
 	Escribir "Ingrese un numero del 1 - 12"
 	num <- "";
 	leer num
@@ -693,7 +693,7 @@ FinFuncion
 
 Funcion EjercicioC9()
 	Limpiar Pantalla
-	//En un almacÈn se hace un 20% de descuento a los clientes cuya compra supere los $1000,
+	//En un almac√©n se hace un 20% de descuento a los clientes cuya compra supere los $1000,
 	//se desea que realice un algoritmo el cual tome por entrada el monto apagar por el cliente
 	//	y arroje como salida el monto aplicando el descuento de ser necesario.
 	//entrada:
@@ -709,7 +709,7 @@ Funcion EjercicioC9()
 	//escribir "el valor a pagar sin el descuento es:",compra;
 	//FinSi
 	Definir compra,descuento,precio_D Como Real
-	Escribir "En un almacÈn se hace un 20% de descuento a los clientes cuya compra supere los $1000, " Sin Saltar
+	Escribir "En un almac√©n se hace un 20% de descuento a los clientes cuya compra supere los $1000, " Sin Saltar
 	Escribir"se desea que realice un algoritmo el cual tome por entrada el monto apagar por el cliente "Sin Saltar
 	Escribir"y arroje como salida el monto aplicando el descuento de ser necesario."
 	
@@ -729,8 +729,8 @@ FinFuncion
 Funcion EjercicioC10 ()
 	Limpiar Pantalla
 	//Ejercicio 10
-	//Dado dos n˙meros y un operador matem·tico(+,-,*,/,mod,div) realizar la suma, resta,
-	//multiplicaciÛn, divisiÛn, resto y divisiÛn entera(div) de los dos n˙meros seg˙n el operador
+	//Dado dos n√∫meros y un operador matem√°tico(+,-,*,/,mod,div) realizar la suma, resta,
+	//multiplicaci√≥n, divisi√≥n, resto y divisi√≥n entera(div) de los dos n√∫meros seg√∫n el operador
 	//ingresado.
 	//entrada
 	//definir num1, num2, resultado como reales 
@@ -762,8 +762,8 @@ Funcion EjercicioC10 ()
 	//escribir "el resultado es: ",resultado;
 	definir num1, num2, resultado como reales 
 	definir operadores Como Caracter
-	Escribir "Dado dos n˙meros y un operador matem·tico(+,-,*,/,mod,div) realizar la suma, resta," Sin Saltar
-	Escribir"multiplicaciÛn, divisiÛn, resto y divisiÛn entera(div) de los dos n˙meros seg˙n el operador" Sin Saltar
+	Escribir "Dado dos n√∫meros y un operador matem√°tico(+,-,*,/,mod,div) realizar la suma, resta," Sin Saltar
+	Escribir"multiplicaci√≥n, divisi√≥n, resto y divisi√≥n entera(div) de los dos n√∫meros seg√∫n el operador" Sin Saltar
 	Escribir"ingresado."
 	Escribir "digite dos numeros ";
 	leer num1, num2 ;
@@ -804,7 +804,7 @@ FinFuncion
 //submenu iterativas
 Funcion EjercicioI1()
 	Limpiar Pantalla
-	Escribir "Dado un n˙mero entero N, calcular e informar al usuario cu·ntos dÌgitos tiene dicho n˙mero."
+	Escribir "Dado un n√∫mero entero N, calcular e informar al usuario cu√°ntos d√≠gitos tiene dicho n√∫mero."
 	Escribir "Ingrese un numero"
 	Leer num
 	//Al ingresar el numero lo unico que se hace es sacar la longitud y se pone la cantidad de digitos que tiene
@@ -817,7 +817,7 @@ funcion EjercicioI2()
 	Limpiar Pantalla
 	Definir num,inversa Como Caracter
 	Definir a,b,i Como Entero
-	Escribir "Dado un n˙mero entero cuya cantidad de dÌgitos es igual a 5, determine si escapic˙a"
+	Escribir "Dado un n√∫mero entero cuya cantidad de d√≠gitos es igual a 5, determine si escapic√∫a"
 	Escribir "Ingrese el numero de 5 digitos"
 	leer num
 	inversa="";
@@ -910,9 +910,9 @@ Funcion EjercicioI6()
 	Limpiar Pantalla
 
 	Definir suma,num,divisores Como Entero
-	escribir "Escribir un algoritmo que indique si un n˙mero es perfecto"
-	escribir"Nota: un n˙mero es perfecto cuando la suma de los divisores del n˙mero incluido el 1 y " Sin Saltar
-	escribir"excluido el propio n˙mero es igual al numero"
+	escribir "Escribir un algoritmo que indique si un n√∫mero es perfecto"
+	escribir"Nota: un n√∫mero es perfecto cuando la suma de los divisores del n√∫mero incluido el 1 y " Sin Saltar
+	escribir"excluido el propio n√∫mero es igual al numero"
 	escribir"Ejemplo: numero=6: los divisores del 6 son: 1+2+3=6"
 	
 	Escribir "Ingrese el numero"
@@ -940,7 +940,7 @@ FinFuncion
 
 Funcion EjercicioI7()
 	Limpiar Pantalla
-	//Nota: Un n˙mero primo es aquel que solo es divisible por 1(uno) y por el mismo.
+	//Nota: Un n√∫mero primo es aquel que solo es divisible por 1(uno) y por el mismo.
 	//entrada
     //definir Num Como entero;
 	//escribir "digite un numero";
@@ -959,8 +959,8 @@ Funcion EjercicioI7()
 	//Escribir "no es un numero primo:",N;
     //FinS
 	Definir i,n,c Como Entero
-	Escribir "Dado un n˙mero N determinar si es un n˙mero primo."
-	escribir "Nota: Un n˙mero primo es aquel que solo es divisible por 1(uno) y por el mismo"
+	Escribir "Dado un n√∫mero N determinar si es un n√∫mero primo."
+	escribir "Nota: Un n√∫mero primo es aquel que solo es divisible por 1(uno) y por el mismo"
 	definir Num Como entero;
 	escribir "digite un numero";
 	leer Num;
@@ -981,7 +981,7 @@ Funcion EjercicioI7()
 FinFuncion
 Funcion EjercicioI8()
 	Limpiar Pantalla
-	//Construya un programa que dado un valor entero N, haga el c·lculo de la funciÛn factorial
+	//Construya un programa que dado un valor entero N, haga el c√°lculo de la funci√≥n factorial
 	//utilizando estructuras iterativas
 	//entrada:
 	//definir N, factorial Como Entero;
@@ -995,7 +995,7 @@ Funcion EjercicioI8()
 	//salida
     //Escribir "el factorial es:",factorial;
 	definir N, factorial Como Entero;
-	Escribir "Construya un programa que dado un valor entero N, haga el c·lculo de la funciÛn factorial utilizando estructuras iterativas."
+	Escribir "Construya un programa que dado un valor entero N, haga el c√°lculo de la funci√≥n factorial utilizando estructuras iterativas."
 	escribir "digite un valor"
 	leer N;
 	
@@ -1011,23 +1011,24 @@ Funcion EjercicioI9()
 	Limpiar Pantalla
 	Definir contra Como Cadena
 	Definir longContra Como Entero
-	
-	Escribir "ContraseÒa de 10 digitos"
+	Escribir "Dado un n√∫mero entero N que representa una contrase√±a"
+	Escribir "Contrase√±a de 10 digitos"
 	//Se inicia con un ciclo repetitivo
 	Mientras longContra < 10 Hacer
-		Escribir "Ingrese una contraseÒa:"
+		Escribir "Ingrese una contrase√±a:"
 		Leer contra
-		//Se saca la longitud de la contraseÒa ingresada
+		//Se saca la longitud de la contrase√±a ingresada
 		longContra = Longitud(contra)
 		//si tiene menos de 10 digitos se le pedira que ingrese otra nuevamente
 		Si longContra < 10 Entonces
-			Escribir "La contraseÒa es minimo de 10 digitos"
+			Escribir "La contrase√±a tiene que tener minimo 10 digitos para ser segura"
 		Fin Si
 	Fin Mientras
-	//El ciclo termina cuando se ingresa la contraseÒa con 10 digitos
-	Escribir "ContraseÒa Aceptada"
+	//El ciclo termina cuando se ingresa la contrase√±a con 10 digitos
+	Escribir "Ha ingresado una contrase√±a segura"
 
 FinFuncion
+
 
 Funcion EjercicioI10()
 	Limpiar Pantalla
@@ -1038,13 +1039,13 @@ Funcion EjercicioI10()
 //		si num< nmenor Entonces
 //			nmenor=num
 //		FinSi
-//		Escribir "Ingrese un n˙mero (0 para terminar):"
+//		Escribir "Ingrese un n√∫mero (0 para terminar):"
 //		leer num
 	Definir num,nmayor,nmenor Como Entero
-	Escribir "Dada una secuencia de n˙meros terminada en cero (0), elaborar un algoritmo que" 
-	Escribir "informe al usuario quÈ valor tiene el n˙mero mayor y quÈ valor tiene el n˙mero menor, sin contar el cero (0)."
+	Escribir "Dada una secuencia de n√∫meros terminada en cero (0), elaborar un algoritmo que" 
+	Escribir "informe al usuario qu√© valor tiene el n√∫mero mayor y qu√© valor tiene el n√∫mero menor, sin contar el cero (0)."
 	Escribir ""
-	Escribir "Ingrese un n˙mero (0 para terminar):"
+	Escribir "Ingrese un n√∫mero (0 para terminar):"
 	leer num
 	nmayor = num
 	nmenor = num
@@ -1055,25 +1056,25 @@ Funcion EjercicioI10()
 		si num< nmenor Entonces
 			nmenor=num
 		FinSi
-		Escribir "Ingrese un n˙mero (0 para terminar):"
+		Escribir "Ingrese un n√∫mero (0 para terminar):"
 		leer num
 	FinMientras
-	Escribir "El n˙mero mayor es: ", nmayor
-	Escribir "El n˙mero menor es: ", nmenor
+	Escribir "El n√∫mero mayor es: ", nmayor
+	Escribir "El n√∫mero menor es: ", nmenor
 
 FinFuncion
 
 Funcion EjercicioI11()
 	Limpiar Pantalla
 	//Se tiene una secuencia de enteros terminada en cero, que corresponde a la edad, peso y
-	//estatura de una muestra de hombres y mujeres mayores de 18 aÒos. Con base en dicha
+	//estatura de una muestra de hombres y mujeres mayores de 18 a√±os. Con base en dicha
 	//secuencia se desea realizar un estudio a fin de conocer:
 	//	Edad promedio de todas las personas en la muestra.
 	//	Peso promedio de todas las personas en la muestra.
 	//	Estatura promedio de todas las personas en la muestra.
-	//	Cu·ntas personas hay con edad entre los 18 y 25 aÒos.
-	//	Cu·ntas personas son mayores a 36 aÒos.
-	//	Cu·l es el promedio de peso de las personas con edades entre 18 y 35 aÒos.
+	//	Cu√°ntas personas hay con edad entre los 18 y 25 a√±os.
+	//	Cu√°ntas personas son mayores a 36 a√±os.
+	//	Cu√°l es el promedio de peso de las personas con edades entre 18 y 35 a√±os.
 	Definir edad, peso, estatura como reales;
 	Definir suma_edad, suma_peso, suma_estatura como reales;
 	Definir totalPersonas como entero;
@@ -1098,17 +1099,17 @@ Funcion EjercicioI11()
 		Escribir "Ingrese la estatura:";
 		Leer estatura;
 		
-		// Cu·ntas personas hay con edad entre los 18 y 25 aÒos.
+		// Cu√°ntas personas hay con edad entre los 18 y 25 a√±os.
 		Si edad >= 18 y edad <= 25 entonces
 			contador18_25 = contador18_25 + 1;
 		Fin Si
 		
-		// Cu·ntas personas son mayores a 36 aÒos.
+		// Cu√°ntas personas son mayores a 36 a√±os.
 		Si edad > 36 entonces
 			contadormayor_36 = contadormayor_36 + 1;
 		Fin Si
 		
-		// Cu·l es el promedio de peso de las personas con edades entre 18 y 35 aÒos.
+		// Cu√°l es el promedio de peso de las personas con edades entre 18 y 35 a√±os.
 		Si edad >= 18 y edad <= 35 entonces
 			sumapeso18_35 = sumapeso18_35 + peso;
 		Fin Si
@@ -1130,7 +1131,7 @@ Funcion EjercicioI11()
 	promedio_peso = suma_peso / totalPersonas;
 	promedio_estatura = suma_estatura / totalPersonas;
 	
-	// Comprobar si existen personas con edades entre 18 y 35 para evitar la divisiÛn por cero.
+	// Comprobar si existen personas con edades entre 18 y 35 para evitar la divisi√≥n por cero.
 	Si contador18_25 > 0 entonces
 		promedio_peso18_35 = sumapeso18_35 / contador18_25;
 	Sino
@@ -1140,9 +1141,9 @@ Funcion EjercicioI11()
 	Escribir "Edad promedio: ", promedio_edad;
 	Escribir "Peso promedio: ", promedio_peso;
 	Escribir "Estatura promedio: ", promedio_estatura;
-	Escribir "Cantidad de personas entre 18 y 25 aÒos: ", contador18_25;
-	Escribir "Cantidad de personas mayores a 36 aÒos: ", contadormayor_36;
-	Escribir "Promedio de peso de entre 18 y 35 aÒos: ", promedio_peso18_35
+	Escribir "Cantidad de personas entre 18 y 25 a√±os: ", contador18_25;
+	Escribir "Cantidad de personas mayores a 36 a√±os: ", contadormayor_36;
+	Escribir "Promedio de peso de entre 18 y 35 a√±os: ", promedio_peso18_35
 FinFuncion
 
 Funcion EjercicioI12()
@@ -1166,7 +1167,7 @@ Funcion EjercicioI13()
 	
 	Limpiar Pantalla
 
-	//	Ejercicio 13. Escribir un algoritmo que multiplique dos n˙meros por medio de sumas†sucesivas.
+	//	Ejercicio 13. Escribir un algoritmo que multiplique dos n√∫meros por medio de sumas¬†sucesivas.
 	Definir num1,num2,sumaP,x Como Entero
 	Escribir "Ingrese 2 numeros"
 	Leer num1,num2
@@ -1180,7 +1181,7 @@ Funcion EjercicioI13()
 FinFuncion
 
 Funcion EjercicioI14()
-//	Escribir "Ingrese n˙meros"
+//	Escribir "Ingrese n√∫meros"
 //	Leer num
 //	
 //	si (num > 0) Entonces
@@ -1189,7 +1190,7 @@ Funcion EjercicioI14()
 //	FinSi
 //	
 //	Mientras num <> 0 Hacer
-//		Escribir "Ingrese n˙meros"
+//		Escribir "Ingrese n√∫meros"
 //		Leer num
 //		
 //		si (num > 0) Entonces
@@ -1197,9 +1198,9 @@ Funcion EjercicioI14()
 //			c <- c + 1
 //		FinSi
 	Limpiar Pantalla
-	Escribir "Dados N n˙mero positivos (N>1) calcular el promedio de esta serie. Considere que la serie termina al leer un 0."
+	Escribir "Dados N n√∫mero positivos (N>1) calcular el promedio de esta serie. Considere que la serie termina al leer un 0."
 	i <- 1
-	Escribir "Ingrese n˙meros"
+	Escribir "Ingrese n√∫meros"
 	Leer num
 	
 	si (num > 0) Entonces
@@ -1208,7 +1209,7 @@ Funcion EjercicioI14()
 	FinSi
 	
 	Mientras num <> 0 Hacer
-		Escribir "Ingrese n˙meros"
+		Escribir "Ingrese n√∫meros"
 		Leer num
 		
 		si (num > 0) Entonces
@@ -1239,7 +1240,7 @@ Funcion EjercicioI15()
 //		cociente <- cociente + 1
 //	Fin Mientras
 	Limpiar Pantalla
-	Escribir "Escribir un algoritmo que divida dos n˙meros por medio de restas sucesivas"
+	Escribir "Escribir un algoritmo que divida dos n√∫meros por medio de restas sucesivas"
 	Definir dividendo, divisor, cociente, residuo como Entero
 	
 	Escribir "Ingrese el primer numero:"
@@ -1277,49 +1278,49 @@ Algoritmo Proyecto
 	
 	// Submenu Selectivas
 	
-	menuS[0] = "	1) Convierta a expresiÛn matem·tica,"
-	menuS[1] = "  2) Dados dos (2) n˙meros calcule la suma, resta, multiplicaciÛn, divisiÛn y mÛdulo."
-	menuS[2] = "  3) Dados tres (3) n˙meros, Hacer una aplicaciÛn que calcule la resolvente"
-	menuS[3] = "  4) Dados dos (2) lados de un tri·ngulo en cm, calcular la hipotenusa del mismo."
-	menuS[4] = "  5) Dado un (1) n˙mero, imprimir 0 si es par y 1 si es impar."
-	menuS[5] = "  6) Dado un (1) n˙mero binario de cuatro (4) dÌgitos imprimir su valor"
-	menuS[6] = "  7) Dado un (1) n˙mero de cuatro (4) dÌgitos imprimirlo por separado en unidades,decenas, centenas y unidades de mil."
-	menuS[7] = "  8) Dado un car·cter indicar si es un digito o una consonante o un car·cter especial."
-	menuS[8] = "  9) Dado dos caracteres indicar si el primer car·cter es igual, mayor o menor que el segundo"
-	menuS[9] = "  10) Dada una frase cualquiera presentarla en may˙scula y minuscula"
+	menuS[0] = "	1) Convierta a expresi√≥n matem√°tica,"
+	menuS[1] = "  2) Dados dos (2) n√∫meros calcule la suma, resta, multiplicaci√≥n, divisi√≥n y m√≥dulo."
+	menuS[2] = "  3) Dados tres (3) n√∫meros, Hacer una aplicaci√≥n que calcule la resolvente"
+	menuS[3] = "  4) Dados dos (2) lados de un tri√°ngulo en cm, calcular la hipotenusa del mismo."
+	menuS[4] = "  5) Dado un (1) n√∫mero, imprimir 0 si es par y 1 si es impar."
+	menuS[5] = "  6) Dado un (1) n√∫mero binario de cuatro (4) d√≠gitos imprimir su valor"
+	menuS[6] = "  7) Dado un (1) n√∫mero de cuatro (4) d√≠gitos imprimirlo por separado en unidades,decenas, centenas y unidades de mil."
+	menuS[7] = "  8) Dado un car√°cter indicar si es un digito o una consonante o un car√°cter especial."
+	menuS[8] = "  9) Dado dos caracteres indicar si el primer car√°cter es igual, mayor o menor que el segundo"
+	menuS[9] = "  10) Dada una frase cualquiera presentarla en may√∫scula y minuscula"
 	menuS[10]= "  11) Salir"
 	
 	//Submenu Condicionales
 	
-	menuC[0] = "  1) Todos los aÒos que se dividen exactamente entre 400"
-	menuC[1] = "  2) Dado un n˙mero entero cuya cantidad de dÌgitos es igual a 5, determine si escapic˙a."
-	menuC[2] = "  3) Para un valor entero positivo que representa una cantidad en segundos, indicar su equivalente en minutos, horas y dÌas."
-	menuC[3] = "  4) Dados tres n˙meros enteros positivos A, B y C, øDetermine si son iguales? øcu·l de ellos es el mayor? y øcu·l es el segundo mayor?"
-	menuC[4] = "  5) En un estacionamiento el monto a pagar se calcula multiplicando el n˙mero dehoras que permaneciÛ el automÛvil dentro del estacionamiento"
-	menuC[5] = "  6) El IMC resulta de la divisiÛn de la masa del individuo (en kilogramos) entre el cuadrado de	la estatura (en metros)."
-	menuC[6] = "  7) Escriba un algoritmo que reciba una fecha (dÌa y mes) correspondiente al aÒo 2014"
-	menuC[7] = "  8) Solicitar un n˙mero entre el 1 y el 12 e imprimir el mes correspondiente a dicho n˙mero."
-	menuC[8] = "  9) En un almacÈn se hace un 20% de descuento a los clientes cuya compra supere los $100a"
-	menuC[9] = "  10) Dado dos n˙meros y un operador matem·tico(+,-,*,/,mod,div)"
+	menuC[0] = "  1) Todos los a√±os que se dividen exactamente entre 400"
+	menuC[1] = "  2) Dado un n√∫mero entero cuya cantidad de d√≠gitos es igual a 5, determine si escapic√∫a."
+	menuC[2] = "  3) Para un valor entero positivo que representa una cantidad en segundos, indicar su equivalente en minutos, horas y d√≠as."
+	menuC[3] = "  4) Dados tres n√∫meros enteros positivos A, B y C, ¬øDetermine si son iguales? ¬øcu√°l de ellos es el mayor? y ¬øcu√°l es el segundo mayor?"
+	menuC[4] = "  5) En un estacionamiento el monto a pagar se calcula multiplicando el n√∫mero dehoras que permaneci√≥ el autom√≥vil dentro del estacionamiento"
+	menuC[5] = "  6) El IMC resulta de la divisi√≥n de la masa del individuo (en kilogramos) entre el cuadrado de	la estatura (en metros)."
+	menuC[6] = "  7) Escriba un algoritmo que reciba una fecha (d√≠a y mes) correspondiente al a√±o 2014"
+	menuC[7] = "  8) Solicitar un n√∫mero entre el 1 y el 12 e imprimir el mes correspondiente a dicho n√∫mero."
+	menuC[8] = "  9) En un almac√©n se hace un 20% de descuento a los clientes cuya compra supere los $100a"
+	menuC[9] = "  10) Dado dos n√∫meros y un operador matem√°tico(+,-,*,/,mod,div)"
 	menuC[10] = " 11) Salir"
 	
 	// Iteradores
 	
-	menuI[0]= "1) Dado un n˙mero entero N, calcular e informar al usuario cu·ntos dÌgitos tiene dicho n˙mero."
-	menuI[1]= "2) Dado un n˙mero, determine si es capic˙a."
+	menuI[0]= "1) Dado un n√∫mero entero N, calcular e informar al usuario cu√°ntos d√≠gitos tiene dicho n√∫mero."
+	menuI[1]= "2) Dado un n√∫mero, determine si es capic√∫a."
 	menuI[2]= "3) Escribir un algoritmo que presente los divisores de un numero"
 	menuI[3]= "4) Escribir un algoritmo que presente la suma de los divisores de un numero"
 	menuI[4]= "5) Escribir un algoritmo que presente la cantidad de los divisores de un numero"
-	menuI[5]= "6) Escribir un algoritmo que indique si un n˙mero es perfecto"
-	menuI[6]= "7) Dado un n˙mero N determinar si es un n˙mero primo."
-	menuI[7]= "8) Construya un programa que dado un valor entero N, haga el c·lculo de la funciÛn factorial utilizando estructuras iterativas."
-	menuI[8]= "9) Dado un n˙mero entero N que representa una contraseÒa"
-	menuI[9]= "10) Dada una secuencia de n˙meros terminada en cero (0)"
-	menuI[10]= "11) Se tiene una secuencia de enteros terminada en cero, que corresponde a la edad, peso y estatura de una muestra de hombres y mujeres mayores de 18 aÒos."
+	menuI[5]= "6) Escribir un algoritmo que indique si un n√∫mero es perfecto"
+	menuI[6]= "7) Dado un n√∫mero N determinar si es un n√∫mero primo."
+	menuI[7]= "8) Construya un programa que dado un valor entero N, haga el c√°lculo de la funci√≥n factorial utilizando estructuras iterativas."
+	menuI[8]= "9) Dado un n√∫mero entero N que representa una contrase√±a"
+	menuI[9]= "10) Dada una secuencia de n√∫meros terminada en cero (0)"
+	menuI[10]= "11) Se tiene una secuencia de enteros terminada en cero, que corresponde a la edad, peso y estatura de una muestra de hombres y mujeres mayores de 18 a√±os."
 	menuI[11]= "12) Construye un algoritmo que calcule e imprima la tabla de multiplicar, desde la tabla del 1 hasta la del 10."
-	menuI[12]= "13) Escribir un algoritmo que multiplique dos n˙meros por medio de sumas sucesivas."
-	menuI[13]= "14) Dados N n˙mero positivos (N>1) calcular el promedio de esta serie. Considere que la serie termina al leer un 0."
-	menuI[14]= "15) Escribir un algoritmo que divida dos n˙meros por medio de restas sucesivas"
+	menuI[12]= "13) Escribir un algoritmo que multiplique dos n√∫meros por medio de sumas sucesivas."
+	menuI[13]= "14) Dados N n√∫mero positivos (N>1) calcular el promedio de esta serie. Considere que la serie termina al leer un 0."
+	menuI[14]= "15) Escribir un algoritmo que divida dos n√∫meros por medio de restas sucesivas"
 	menuI[15]= "16) Salir"
 	opc=""
 	Limpiar Pantalla
@@ -1332,43 +1333,43 @@ Algoritmo Proyecto
 					opcn=presentarMenu("Menu Selectivas ",menuS,11)
 					Segun opcn Hacer
 						"1":
-							Escribir "	Siguiendo la prioridad de operadores, convierta a expresiÛn matem·tica"
+							Escribir "	Siguiendo la prioridad de operadores, convierta a expresi√≥n matem√°tica"
 							Ejercicio1()
 							Esperar 5 Segundos
 						"2":
-							Escribir "Dados dos (2) n˙meros calcule la suma, resta, multiplicaciÛn, divisiÛn y mÛdulo."
+							Escribir "Dados dos (2) n√∫meros calcule la suma, resta, multiplicaci√≥n, divisi√≥n y m√≥dulo."
 							Ejercicio2()
 							Esperar 5 Segundos
 						"3":
-							Escribir "Dados tres (3) n˙meros, Hacer una aplicaciÛn que calcule la resolvente"
+							Escribir "Dados tres (3) n√∫meros, Hacer una aplicaci√≥n que calcule la resolvente"
 							Ejercicio3()
 							Esperar 5 Segundos
 						"4":
-							Escribir "Dados dos (2) lados de un tri·ngulo en cm, calcular la hipotenusa del mismo."
+							Escribir "Dados dos (2) lados de un tri√°ngulo en cm, calcular la hipotenusa del mismo."
 							Ejercicio4()
 							Esperar 5 Segundos
 						"5":
-							Escribir "Dado un (1) n˙mero, imprimir 0 si es par y 1 si es impar."
+							Escribir "Dado un (1) n√∫mero, imprimir 0 si es par y 1 si es impar."
 							Ejercicio5()
 							Esperar 5 Segundos
 						"6":
-							Escribir "Dado un (1) n˙mero binario de cuatro (4) dÌgitos imprimir su valor"
+							Escribir "Dado un (1) n√∫mero binario de cuatro (4) d√≠gitos imprimir su valor"
 							Ejercicio6()
 							Esperar 5 Segundos
 						"7":
-							Escribir "Dado un (1) n˙mero de cuatro (4) dÌgitos imprimirlo por separado en unidades,decenas, centenas y unidades de mil."
+							Escribir "Dado un (1) n√∫mero de cuatro (4) d√≠gitos imprimirlo por separado en unidades,decenas, centenas y unidades de mil."
 							Ejercicio7()
 							Esperar 5 Segundos
 						"8":
-							Escribir "Dado un car·cter indicar si es un digito o una consonante o un car·cter especial."
+							Escribir "Dado un car√°cter indicar si es un digito o una consonante o un car√°cter especial."
 							Ejercicio8()
 							Esperar 5 Segundos
 						"9":
-							Escribir "Dado dos caracteres indicar si el primer car·cter es igual, mayor o menor que el segundo"
+							Escribir "Dado dos caracteres indicar si el primer car√°cter es igual, mayor o menor que el segundo"
 							Ejercicio9()
 							Esperar 5 Segundos
 						"10":
-							Escribir "Dada una frase cualquiera presentarla en may˙scula y minuscula"
+							Escribir "Dada una frase cualquiera presentarla en may√∫scula y minuscula"
 							Ejercicio10()
 							Esperar 5 Segundos
 						"11":
@@ -1385,43 +1386,43 @@ Algoritmo Proyecto
 					opcn=presentarMenu("Menu Condicionales",menuC,11)
 					Segun opcn Hacer
 						"1":
-							Escribir "Todos los aÒos que se dividen exactamente entre 400"
+							Escribir "Todos los a√±os que se dividen exactamente entre 400"
 							EjercicioC1()
 							Esperar 5 Segundos
 						"2":
-							Escribir "Dado un n˙mero entero cuya cantidad de dÌgitos es igual a 5, determine si escapic˙a."
+							Escribir "Dado un n√∫mero entero cuya cantidad de d√≠gitos es igual a 5, determine si escapic√∫a."
 							EjercicioC2()
 							Esperar 5 Segundos
 						"3":
-							Escribir "Para un valor entero positivo que representa una cantidad en segundos, indicar su equivalente en minutos, horas y dÌas."
+							Escribir "Para un valor entero positivo que representa una cantidad en segundos, indicar su equivalente en minutos, horas y d√≠as."
 							EjercicioC3()
 							Esperar 5 Segundos
 						"4":
-							Escribir "Dados tres n˙meros enteros positivos A, B y C, øDetermine si son iguales? øcu·l de ellos es elmayor? y øcu·l es el segundo mayor?"
+							Escribir "Dados tres n√∫meros enteros positivos A, B y C, ¬øDetermine si son iguales? ¬øcu√°l de ellos es elmayor? y ¬øcu√°l es el segundo mayor?"
 							EjercicioC4()
 							Esperar 5 Segundos
 						"5":
-							Escribir "En un estacionamiento el monto a pagar se calcula multiplicando el n˙mero de horas que permaneciÛ el automÛvil dentro del estacionamiento "
+							Escribir "En un estacionamiento el monto a pagar se calcula multiplicando el n√∫mero de horas que permaneci√≥ el autom√≥vil dentro del estacionamiento "
 							EjercicioC5()
 							Esperar 5 Segundos
 						"6":
-							Escribir "El IMC resulta de la divisiÛn de la masa del individuo (en kilogramos) entre el cuadrado de la estatura (en metros)."
+							Escribir "El IMC resulta de la divisi√≥n de la masa del individuo (en kilogramos) entre el cuadrado de la estatura (en metros)."
 							EjercicioC6()
 							Esperar 5 Segundos
 						"7":
-							Escribir "Escriba un algoritmo que reciba una fecha (dÌa y mes) correspondiente al aÒo2014"
+							Escribir "Escriba un algoritmo que reciba una fecha (d√≠a y mes) correspondiente al a√±o2014"
 							EjercicioC7()
 							Esperar 5 Segundos
 						"8":
-							Escribir "Solicitar un n˙mero entre el 1 y el 12 e imprimir el mes correspondiente a dicho n˙mero"
+							Escribir "Solicitar un n√∫mero entre el 1 y el 12 e imprimir el mes correspondiente a dicho n√∫mero"
 							EjercicioC8()
 							Esperar 5 Segundos
 						"9":
-							Escribir "En un almacÈn se hace un 20% de descuento a los clientes cuya compra supere los $1000"
+							Escribir "En un almac√©n se hace un 20% de descuento a los clientes cuya compra supere los $1000"
 							EjercicioC9()
 							Esperar 5 Segundos
 						"10":
-							Escribir "Dado dos n˙meros y un operador matem·tico(+,-,*,/,mod,div)"
+							Escribir "Dado dos n√∫meros y un operador matem√°tico(+,-,*,/,mod,div)"
 							EjercicioC10()
 							Esperar 5 Segundos
 						"11":
@@ -1438,11 +1439,11 @@ Algoritmo Proyecto
 					opcn=presentarMenu("Menu Iterativas ",menuI,16)
 					Segun opcn Hacer
 						"1":
-							Escribir "Dado un n˙mero entero N, calcular e informar al usuario cu·ntos dÌgitos tiene dicho n˙mero."
+							Escribir "Dado un n√∫mero entero N, calcular e informar al usuario cu√°ntos d√≠gitos tiene dicho n√∫mero."
 							EjercicioI1()
 							Esperar 6 Segundos
 						"2":
-							Escribir "Dado un n˙mero, determine si es capic˙a."
+							Escribir "Dado un n√∫mero, determine si es capic√∫a."
 							EjercicioI2()
 							Esperar 6 Segundos
 						"3":
@@ -1458,23 +1459,23 @@ Algoritmo Proyecto
 							EjercicioI5()
 							Esperar 4 Segundos
 						"6":
-							Escribir "Escribir un algoritmo que indique si un n˙mero es perfecto"
+							Escribir "Escribir un algoritmo que indique si un n√∫mero es perfecto"
 							EjercicioI6()
 							Esperar 6 Segundos
 						"7":
-							Escribir "Dado un n˙mero N determinar si es un n˙mero primo"
+							Escribir "Dado un n√∫mero N determinar si es un n√∫mero primo"
 							EjercicioI7()
 							Esperar 4 Segundos
 						"8":
-							Escribir "Construya un programa que dado un valor entero N, haga el c·lculo de la funciÛn factorial utilizando estructuras iterativas."
+							Escribir "Construya un programa que dado un valor entero N, haga el c√°lculo de la funci√≥n factorial utilizando estructuras iterativas."
 							EjercicioI8()
 							Esperar 4 Segundos
 						"9":
-							Escribir "Dado un n˙mero entero N que representa una contraseÒa"
+							Escribir "Dado un n√∫mero entero N que representa una contrase√±a"
 							EjercicioI9()
 							esperar 4 Segundos
 						"10":
-							Escribir "Dada una secuencia de n˙meros terminada en cero (0)"
+							Escribir "Dada una secuencia de n√∫meros terminada en cero (0)"
 							EjercicioI10()
 							Esperar 4 Segundos
 						"11":
@@ -1486,15 +1487,15 @@ Algoritmo Proyecto
 							EjercicioI12()
 							Esperar 4 Segundos
 						"13":
-							Escribir "Escribir un algoritmo que multiplique dos n˙meros por medio de sumas sucesivas."
+							Escribir "Escribir un algoritmo que multiplique dos n√∫meros por medio de sumas sucesivas."
 							EjercicioI13()
 							Esperar 4 Segundos
 						"14":
-							Escribir "Dados N n˙mero positivos (N>1) calcular el promedio de esta serie. Considere que la serie termina al leer un 0."
+							Escribir "Dados N n√∫mero positivos (N>1) calcular el promedio de esta serie. Considere que la serie termina al leer un 0."
 							EjercicioI14()
 							Esperar 4 Segundos
 						"15":
-							Escribir "Dados N n˙mero positivos (N>1) calcular el promedio de esta serie. Considere que la serie termina al leer un 0."
+							Escribir "Dados N n√∫mero positivos (N>1) calcular el promedio de esta serie. Considere que la serie termina al leer un 0."
 							EjercicioI15()
 							Esperar 4 Segundos
 					FinSegun
