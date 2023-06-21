@@ -990,7 +990,7 @@ Funcion EjercicioI8()
 	//factorial <- 1;
 	//proceso:
 	//para i<- 1 hasta N con paso 1 hacer 
-	//factorial <- N * i;
+	//factorial <- factorial * i;
 	//FinPara
 	//salida
     //Escribir "el factorial es:",factorial;
