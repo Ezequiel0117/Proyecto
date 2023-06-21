@@ -165,6 +165,7 @@ FinFuncion
 
 Funcion Ejercicio4()
 	Limpiar Pantalla
+	Definir lado1,lado2 como real
 	Escribir "Dados dos (2) lados de un triángulo en cm, calcular la hipotenusa del mismo."
 	Escribir "Ingrese los lados del triangulo"
 	Leer lado1,lado2
@@ -328,7 +329,7 @@ Funcion Ejercicio10()
 	Limpiar Pantalla
 	Definir frase Como Caracter
 	//	Dada una frase cualquiera presentarla en mayúscula y minuscula
-	Escribir "Ingrese como desea presentarla (Mayus-Minus)"
+	Escribir "Ingrese como desea presentar la frase (1) Mayuscula (2) Minuscula"
 	presentar <- ""
 	Leer presentar
 	
@@ -338,10 +339,12 @@ Funcion Ejercicio10()
 	
 	Limpiar Pantalla
 	//Cuando se decide si es mayuscula o mjinuscula, ya se la transforma 
-	si presentar = "Mayus" Entonces
+	si presentar = "1" Entonces
 		Escribir Mayusculas(frase)
 	SiNo
-		Escribir Minusculas(frase)
+		si presentar = "2" Entonces
+			Escribir Minusculas(frase)
+		FinSi
 	FinSi
 	
 	
@@ -425,6 +428,7 @@ Funcion EjercicioC3()
 		escribir "Error"
 	FinSi
 FinFuncion
+
 Funcion EjercicioC4()
 	Limpiar Pantalla
 	//	Dados tres números enteros positivos A, B y C, ¿Determine si son iguales? ¿cuál de ellos es
@@ -804,6 +808,7 @@ FinFuncion
 //submenu iterativas
 Funcion EjercicioI1()
 	Limpiar Pantalla
+	Definir num Como cadena
 	Escribir "Dado un número entero N, calcular e informar al usuario cuántos dígitos tiene dicho número."
 	Escribir "Ingrese un numero"
 	Leer num
@@ -822,10 +827,11 @@ funcion EjercicioI2()
 	leer num
 	inversa="";
 	//Se saca la longitus del numero
-	b=Longitud(num)
+	b = Longitud(num)
 	//Se hace un proceso repetitivo el cual ira verificando numero por numero desde la posicion 0 hasta la -1 (que es el final)
-	para i=b Hasta 0 Con Paso -1 Hacer
-		inversa=inversa+Subcadena(num,i,i)
+	para i = b Hasta 0 Con Paso -1 Hacer
+		//Proceso en el cual se van a ir guardando los numeros
+		inversa = inversa + Subcadena(num,i,i)
 	FinPara
 	
 	Escribir inversa
@@ -840,12 +846,13 @@ FinFuncion
 Funcion EjercicioI3()
 	
 	Limpiar Pantalla
+	Definir num Como Entero
+	Definir divisores Como Entero
 
 	Escribir "Ejercicio 3. Escribir un algoritmo que presente los divisores de un numero"
 	Escribir "Ingrese un numero "
 	Leer num;
 	
-	Limpiar Pantalla
 	
 	Escribir "Los divisores de ",num,":";
 	//Hacemos un ciclo repetitivo en el cual solo vamos a sacar los divisores de dicho numero
@@ -867,11 +874,13 @@ Funcion EjercicioI4()
 	//		si num mod divisores = 0 Entonces
 	//			suma <- suma + divisores
 	//		FinSi
+	Definir num, suma Como Entero
+	definir divisores Como Real
 	Escribir "Ejercicio 4 Escribir un algoritmo que presente la suma de los divisores de un numero"
 	Escribir "Ingrese un numero "
 	Leer num;
 	
-	Limpiar Pantalla
+	suma <- 0
 	
 	Para divisores <- 1 Hasta num Con Paso 1 Hacer
 		
@@ -886,12 +895,13 @@ FinFuncion
 
 Funcion EjercicioI5()
 	Limpiar Pantalla
-
+	Definir num Como Entero
+	Definir divisores Como Real
 	Escribir "Escribir un algoritmo que presente la cantidad de los divisores de un numero"
 	Escribir "Ingrese un numero"
 	Leer num;
-	Limpiar Pantalla
-	Escribir "Los cantidad de divisores de ",num,":";
+	
+	Escribir "Los cantidad de divisores de ", Sin Saltar num, ": ";
 	//Se hace un ciclo repetitivo en el cual se van sacando los divisores
 	Para divisores <- 1 Hasta num Con Paso 1 Hacer
 		
@@ -958,10 +968,10 @@ Funcion EjercicioI7()
     //SiNo
 	//Escribir "no es un numero primo:",N;
     //FinS
-	Definir i,n,c Como Entero
+	Definir i,n,contador Como Entero
+	definir Num Como entero;
 	Escribir "Dado un número N determinar si es un número primo."
 	escribir "Nota: Un número primo es aquel que solo es divisible por 1(uno) y por el mismo"
-	definir Num Como entero;
 	escribir "digite un numero";
 	leer Num;
 	
@@ -990,7 +1000,7 @@ Funcion EjercicioI8()
 	//factorial <- 1;
 	//proceso:
 	//para i<- 1 hasta N con paso 1 hacer 
-	//factorial <- factorial * i;
+	//factorial <- N * i;
 	//FinPara
 	//salida
     //Escribir "el factorial es:",factorial;
@@ -1002,7 +1012,7 @@ Funcion EjercicioI8()
 	factorial <- 1;
 	
 	para i<- 1 hasta N con paso 1 hacer 
-		factorial <- N * i;
+		factorial <- factorial * i;
 	FinPara
 	Escribir "el factorial es:",factorial;
 FinFuncion
@@ -1028,7 +1038,6 @@ Funcion EjercicioI9()
 	Escribir "Ha ingresado una contraseña segura"
 
 FinFuncion
-
 
 Funcion EjercicioI10()
 	Limpiar Pantalla
